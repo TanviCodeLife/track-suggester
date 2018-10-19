@@ -117,7 +117,9 @@ $(document).ready(function() {
       $("#javaTrack4").hide();
     }
   }
-
+  // $(".custRequest").append("<li>" + serviceInput + "</li>");
+  //   $(".custRequest").append("<li>" + serverInput + "</li>");
+  //   $(".custRequest").append("<li>" + beverageInput + "</li>");
 
   chooseTrack(rolesInput, expertiseInput, goalsInput, flexInput);
 

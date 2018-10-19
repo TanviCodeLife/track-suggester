@@ -1,7 +1,8 @@
 # _Track Suggester_
 #### Week 2 Independent Project at Epicodus, 10.19.2018
-* _HTML Form inputs to gather use information_
-* _Manipulate user input to provide suggestions_
+* _HTML Form inputs to gather user information._
+* _Manipulate user input using DOM and JQuery to provide suggestions_
+*_Use JavaScript for branching logic (business-logic) _
 * _Cover use cases of HTML and CSS/Bootstrap concepts to make it look good._
 
 ### Created By

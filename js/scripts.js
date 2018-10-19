@@ -28,6 +28,7 @@ $(document).ready(function() {
     console.log(validOptions1);
     $(".name").text(nameInput);
     chooseLocation(locationInput);
+    $(".modal").fadeIn();
     //Dev Ops
     if (rolesInput === 1 && expertiseInput >= 2 && goalsInput >= 2 && flexInput === 2) {
       $("#cSharpTrack1").show();
@@ -117,14 +118,12 @@ $(document).ready(function() {
       $("#javaTrack4").hide();
     }
   }
-  // $(".custRequest").append("<li>" + serviceInput + "</li>");
-  //   $(".custRequest").append("<li>" + serverInput + "</li>");
-  //   $(".custRequest").append("<li>" + beverageInput + "</li>");
-
-// <option value="1">January 8th, 2019</option>
- //<option value="2">May 8th, 2019</option>
 
   chooseTrack(rolesInput, expertiseInput, goalsInput, flexInput);
+  $("#modalClose").click(function(event){
+   $(".modal").fadeOut();
+
+ });
 
   event.preventDefault();
 });

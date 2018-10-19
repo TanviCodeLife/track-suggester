@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   //backend
 
-  funtion chooseLocation(){
+  function chooseLocation(){
     if (locationInput === "Seattle")
      $(".location").text(locationInput);
     else {
@@ -29,7 +29,7 @@ $(document).ready(function() {
       $(".name").text(nameInput);
       chooseLocation(locationInput);
       if (rolesInput === 1) {
-        if (expertiseInput >= 2 && goalsInput === 3 && flexInput === 2) {
+        if (expertiseInput >= 2 && goalsInput >= 2 && flexInput === 2) {
          $("#cSharpTrack1").show();
          $("#userExpTrack2").hide();
          $("#rubyReactTrack3").hide();
@@ -38,8 +38,8 @@ $(document).ready(function() {
          $("otherOptionsTrack2").hide();
          $("otherOptionsTrack3").hide();
          $("otherOptionsTrack4").hide();
-       }
-       else {
+      }
+      else {
          $("otherOptionsTrack1").show();
          $("otherOptionsTrack2").hide();
          $("otherOptionsTrack3").hide();
@@ -49,8 +49,9 @@ $(document).ready(function() {
          $("#javaTrack4").hide();
        }
       }
+      //Front-end developer logic
       if (rolesInput === 2){
-        if (expertiseInput >= 1 && goalsInput >= 2  && goalsInput < 4 && flexInput <= 2) {
+        if (expertiseInput >= 1 && goalsInput >= 1  && flexInput >= 1) {
          $("#cSharpTrack1").hide();
          $("#userExpTrack2").show();
          $("#rubyReactTrack3").hide();
@@ -70,8 +71,9 @@ $(document).ready(function() {
          $("#javaTrack4").hide();
         }
       }
+      //Full-Stack Developer
       else if (rolesInput === 3) {
-        if (expertiseInput >= 3 && goalsInput >= 3 && flexInput === 2) {
+        if (expertiseInput >= 2 && goalsInput <=2 && flexInput === 2) {
           $("#cSharpTrack1").hide();
           $("#userExpTrack2").hide();
           $("#rubyReactTrack3").show();
@@ -91,6 +93,7 @@ $(document).ready(function() {
          $("#javaTrack4").hide();
        }
       }
+      //Android Developer
       else if (rolesInput === 4){
         if (expertiseInput >= 1 && goalsInput === 2 && flexInput === 2) {
           $("#cSharpTrack1").hide();

@@ -3,16 +3,16 @@
 }
 
 body{
-background-image: url("file:///Users/Tanvi/Desktop/track-suggester/images/background.jpeg");
-background-position: center;
-background-repeat: no-repeat;
-width: 100%;
+  background-image: url("file:///Users/Tanvi/Desktop/track-suggester/images/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .container-fluid {
- font-family: 'Lato', sans-serif;
- padding-left: 0;
- padding-right: 0;
+  font-family: 'Lato', sans-serif;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .jumbotron {

@@ -9,7 +9,7 @@
     <title>Track Suggestor</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="jumbotron">
         <div class="row">
           <div class="col-lg-12">
@@ -18,13 +18,14 @@
           </div>
       </div>
     </div>
+    <div class="container">
       <form id="detailsform">
         <div class="form-group">
-          <label for="addName">Name</label>
-          <input id="addName" class="form-control" type="text">
+          <label for="addName" class="textColor">Name</label>
+          <input id="addName" class="form-control" type="text" required>
         </div>
-        <div class="form-group" id="selectOption1">
-          <label for="addRoles">Future Job Roles:</label>
+        <div class="form-group">
+          <label for="addRoles" class="textColor">Future Job Roles:</label>
           <select class="form-control" id="addRoles">
             <option value="1">DevOps Engineer</option>
             <option value="2">Front-End Developer</option>
@@ -32,8 +33,8 @@
             <option value="4">Android Developer</option>
           </select>
         </div>
-        <div class="form-group" id="selectOption2">
-          <label for="addExpetise">Select Level of Programming Background:</label>
+        <div class="form-group">
+          <label for="addExpetise" class="textColor">Current Coding Experience:</label>
           <select class="form-control" id="addExpertise">
             <option value="1">No previous coding experience</option>
             <option value="2">Some basic knowledge</option>
@@ -41,8 +42,8 @@
             <option value="4">Expert</option>
           </select>
         </div>
-        <div class="form-group" id="selectOption3">
-          <label for="addGoals">Interests:</label>
+        <div class="form-group">
+          <label for="addGoals" class="textColor">Interests:</label>
           <select class="form-control" id="addGoals">
             <option value="1">Design and Presentation</option>
             <option value="2">Interacting with User Infomation</option>
@@ -51,38 +52,40 @@
           </select>
         </div>
         <div class="form-group" id="selectOption4">
-          <label for="addFlex">Select Program Flexibility:</label>
+          <label for="addFlex" class="textColor">Select Program Flexibility:</label>
           <select class="form-control" id="addFlex">
             <option value="1">Part-Time/Online program - 30 weeks</option>
             <option value="2">Full-Time program - 20 weeks</option>
           </select>
         </div>
         <div class="form-group" id="selectOption3">
-          <label for="addSess">Upcoming Sessions:</label>
+          <label for="addSess" class="textColor">Upcoming Sessions:</label>
           <select class="form-control" id="addSess">
             <option value="1">January 8th, 2019</option>
             <option value="2">May 8th, 2019</option>
           </select>
         </div>
-        <p>Location:</p>
+        <p class="textColor">Location:</p>
         <div class="custom-control custom-radio custom-control-inline">
           <input type="radio" id="addLocation1" name="customRadioInline1" class="custom-control-input" value="Portland">
-          <label class="custom-control-label" for="addLocation1">Portland</label>
+          <label class="custom-control-label" for="addLocation1" class="textColor">Portland</label>
         </div>
         <div class="custom-control custom-radio custom-control-inline">
           <input type="radio" id="addLocation2" name="customRadioInline1" class="custom-control-input" value="Seattle">
-          <label class="custom-control-label" for="addLocation2">Seattle</label>
+          <label class="custom-control-label" for="addLocation2" class="textColor">Seattle</label>
         </div>
-        <button type="submit" class="btn btn-danger">Submit</button>
+        <div> <br>
+          <button type="submit" class="btn btn-success" id="buttonAlign">Submit</button>
+        </div>
       </form>
       <div id="cSharpTrack1">
-        <p>Hello <span class="name"></span>! For your selected background and interests, our C#/React Track will prepare you with the right technologies to be a DevOps Engineer.  Due to the complexity of this track, we offer only full time options at our <a href="#"><span class="location"></span></a> location. Upcoming Sessions. **** Apped LI if time***</p>
+        <p class="textColor">Hello <span class="name"></span>! For your selected background and interests, our C#/React Track will prepare you with the right technologies to be a DevOps Engineer.  Due to the complexity of this track, we offer only full time options at our <a href="#"><span class="location"></span></a> location. Upcoming Sessions.</p>
       </div>
       <div id="userExpTrack2">
-        <p>Hello <span class="name"></span>! For your selected background and interests, our Front End Design Track will prepare you with the right technologies to be a Front-End Developer. Please checkout our <a href="#"><span class="location"></span></a> location. Upcoming Sessions **** Append LI if time***</p>
+        <p class="textColor">Hello <span class="name"></span>! For your selected background and interests, our Front End Design Track will prepare you with the right technologies to be a Front-End Developer. Please checkout our <a href="#"><span class="location"></span></a> location. Upcoming Sessions.</p>
       </div>
       <div id="rubyReactTrack3">
-        <p>Hello <span class="name"></span>! For your selected background and interests, our Ruby/React Track will prepare you with the right technologies to be a Full Stack Developer. Please checkout our <a href="#"><span class="location"></span></a> location. Upcoming Sessions **** Append LI if time***</p>
+        <p class="textColor">Hello <span class="name"></span>! For your selected background and interests, our Ruby/React Track will prepare you with the right technologies to be a Full Stack Developer. Please checkout our <a href="#"><span class="location"></span></a> location. Upcoming Sessions **** Append LI if time***</p>
       </div>
       <div id="javaTrack4">
         <p>Hello <span class="name"></span>! For your selected background and interests, our Java/Android Track will prepare you with the right technologies to be a Android Developer. Please checkout our <a href="#"><span class="location"></span></a> location. Upcoming Sessions **** Append LI if time***</p>
@@ -102,5 +105,6 @@
         <p>Hello <span class="name"></span>! For Android development roles, we would recommend exploring some <a href="#">online resources</a> or even our own one month <a href="#">Intro Course.</a>, to qualify for the Java Track. For Web Design and User Interactive Dev, you can explore our Front-End Design and Ruby tracks. Due to the complexity of C# and Java tracks, we offer only full time options at our <a href="#"><span class="location"></span></a> location. Upcoming Sessions **** Apped LI if time***</p>
       </div>
     </div>
+  </div>
   </body>
 </html>

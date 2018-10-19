@@ -1,3 +1,30 @@
 #cSharpTrack1, #userExpTrack2, #rubyReactTrack3, #javaTrack4, #otherOptionsTrack1, #otherOptionsTrack2, #otherOptionsTrack3, #otherOptionsTrack4 {
   display: none;
 }
+
+body{
+background-image: url("file:///Users/Tanvi/Desktop/track-suggester/images/background.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+
+}
+.container-fluid {
+ padding-left: 0;
+ padding-right: 0;
+
+}
+.container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.textColor, .custom-control-label {
+  color: white;
+}
+
+#buttonAlign {
+  margin-left: 40%;
+  padding-left: 50px;
+  padding-right: 50px;
+}

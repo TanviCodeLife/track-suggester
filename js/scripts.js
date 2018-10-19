@@ -121,6 +121,9 @@ $(document).ready(function() {
   //   $(".custRequest").append("<li>" + serverInput + "</li>");
   //   $(".custRequest").append("<li>" + beverageInput + "</li>");
 
+// <option value="1">January 8th, 2019</option>
+ //<option value="2">May 8th, 2019</option>
+
   chooseTrack(rolesInput, expertiseInput, goalsInput, flexInput);
 
   event.preventDefault();

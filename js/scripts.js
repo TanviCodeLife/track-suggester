@@ -1,3 +1,8 @@
+
+
+
+
+
 //front-end logic
 $(document).ready(function() {
   $("form#detailsform").submit(function(event){

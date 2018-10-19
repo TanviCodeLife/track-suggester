@@ -10,7 +10,6 @@
   </head>
   <body>
     <p>Epicodus Track Suggestor</p>
-
     <div class="container">
       <div class="jumbotron">
         <div class="row">
@@ -25,24 +24,19 @@
           <label for="addName">Name</label>
           <input id="addName" class="form-control" type="text">
         </div>
-        <div class="form-group">
-          <label for="addGoals">Date</label>
-          <input id="addGoals" class="form-control" type="date">
-        </div>
         <div class="form-group" id="selectOption1">
-          <label for="jobRoles">Future Job Roles:</label>
-          <select class="form-control" id="jobRoles">
-            <option>DevOps</option>
+          <label for="addRoles">Future Job Roles:</label>
+          <select class="form-control" id="addRoles">
+            <option>DevOps Engineer</option>
             <option>Android Developer</option>
-            <option>Mobile Developer</option>
-            <option>Backend Developer</option>
+            <option>Front-End Developer</option>
+            <option>Full Stack Developer</option>
             <option>Content Management Developer</option>
-            <option>Web Developer at Startups</option>
           </select>
         </div>
         <div class="form-group" id="selectOption2">
-          <label for="experience">Select Level of Programming Background:</label>
-          <select class="form-control" id="experience">
+          <label for="addExpetise">Select Level of Programming Background:</label>
+          <select class="form-control" id="AddExpertise">
             <option>No previous coding experience</option>
             <option>Some basic knowledge</option>
             <option>Used coding day to day</option>
@@ -50,8 +44,8 @@
           </select>
         </div>
         <div class="form-group" id="selectOption3">
-          <label for="interests">Interests:</label>
-          <select class="form-control" id="interests">
+          <label for="addGoals">Interests:</label>
+          <select class="form-control" id="addGoals">
             <option>Design and Presentation</option>
             <option>Interacting with User Infomation</option>
             <option>Business Software</option>
@@ -60,21 +54,30 @@
           </select>
         </div>
         <div class="form-group" id="selectOption4">
-          <label for="beverage">Select Service</label>
-          <select class="form-control" id="">
-            <option>Cucumber Spa Water</option>
-            <option>Citrus Spa Water</option>
-            <option>Lime Water Cut</option>
-            <option>Tea or Coffee</option>
+          <label for="addflex">Select Program Flexibility:</label>
+          <select class="form-control" id="addflex">
+            <option>Part-Time/Online program - 30 weeks</option>
+            <option>Full-Time program - 20 weeks</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="details">For additional requests:</label>
-          <textarea class="form-control" id="details" rows="3" placeholder="Enter details.."></textarea>
+        <div class="form-group" id="selectOption3">
+          <label for="addSess">Upcoming Sessions:</label>
+          <select class="form-control" id="addSess">
+            <option>January 8th, 2019</option>
+            <option>May 8th, 2019</option>
+          </select>
+        </div>
+        <p>Location:</p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="addLocation1" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="addLocation1">Portland</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="addLocation2" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="addLocation2">Seattle</label>
         </div>
         <button type="submit" class="btn btn-danger">Submit</button>
       </form>
     </div>
-
   </body>
 </html>

@@ -14,47 +14,105 @@ $(document).ready(function() {
 
   //backend
 
-  // function chooseTrack(){
-    // if (ageInput > 20 && ageInput) {
-    //   $("#match").show();
-    //   $("#name").text(nameInput);
-    //   $("#unmatch").hide();
-    //   if(rolesInput === 1 && expertiseInput === 1 ) {
-    //     $("#princessDate1").show();
-    //     $("#princessDate2").hide();
-    //     $("#princessDate3").hide();
-    //     $("#princessDate4").hide();
-    //   }
-    //   else if(signInput === "Leo" && ageInput <= 35) {
-    //     $("#princessDate2").show();
-    //     $("#princessDate1").hide();
-    //     $("#princessDate3").hide();
-    //     $("#princessDate4").hide();
-    //   }
-    //   else if(signInput === "Pisces" && ageInput <= 35) {
-    //     $("#princessDate3").show();
-    //     $("#princessDate1").hide();
-    //     $("#princessDate2").hide();
-    //     $("#princessDate4").hide();
-    //   }
-    //   else {
-    //     $("#princessDate4").show();
-    //     $("#princessDate1").hide();
-    //     $("#princessDate2").hide();
-    //     $("#princessDate3").hide();
-    //   }
-    // }
-    // else if (ageInput < 20 && ageInput) {
-    //   $("#unmatch").show();
-    //   $("#name1").text(nameInput);
-    //   $("#match").hide();
-    //   $("#princessDate4").hide();
-    //   $("#princessDate1").hide();
-    //   $("#princessDate2").hide();
-    //   $("#princessDate3").hide();
-    // }
+  function chooseTrack(){
+    if(rolesInput){
+      if(rolesInput === 1) {
+        if (expertiseInput >= 2 && goalsInput === 3 && flexInput === 2) {
+         $("#cSharpTrack1").show();
+         $("#userExpTrack2").hide();
+         $("#rubyReactTrack3").hide();
+         $("#javaTrack4").hide();
+         $("otherOptionsTrack1").hide();
+         $("otherOptionsTrack2").hide();
+         $("otherOptionsTrack3").hide();
+         $("otherOptionsTrack4").hide();
+       }
+       else {
+         $("otherOptionsTrack1").show();
+         $("otherOptionsTrack2").hide();
+         $("otherOptionsTrack3").hide();
+         $("otherOptionsTrack4").hide();
+         $("#userExpTrack2").hide();
+         $("#rubyReactTrack3").hide();
+         $("#javaTrack4").hide();
+       }
+      }
+      else if(rolesInput === 2)
+       if(expertiseInput >= 1 && goalsInput >= 2  && goalsInput < 4 && flexInput <= 2) {
+        $("#cSharpTrack1").hide();
+        $("#userExpTrack2").show();
+        $("#rubyReactTrack3").hide();
+        $("#javaTrack4").hide();
+        $("otherOptionsTrack1").hide();
+        $("otherOptionsTrack2").hide();
+        $("otherOptionsTrack3").hide();
+        $("otherOptionsTrack4").hide();
+      }
+      else {
+        $("otherOptionsTrack1").hide();
+        $("otherOptionsTrack2").show();
+        $("otherOptionsTrack3").hide();
+        $("otherOptionsTrack4").hide();
+        $("#userExpTrack2").hide();
+        $("#rubyReactTrack3").hide();
+        $("#javaTrack4").hide();
+      }
+      else if(rolesInput === 3) {
+        if(expertiseInput >= 3 && goalsInput >= 3 && flexInput === 2) {
+          $("#cSharpTrack1").hide();
+          $("#userExpTrack2").hide();
+          $("#rubyReactTrack3").show();
+          $("#javaTrack4").hide();
+          $("otherOptionsTrack1").hide();
+          $("otherOptionsTrack2").hide();
+          $("otherOptionsTrack3").hide();
+          $("otherOptionsTrack4").hide();
+        }
+       else {
+         $("otherOptionsTrack1").hide();
+         $("otherOptionsTrack2").hide();
+         $("otherOptionsTrack3").show();
+         $("otherOptionsTrack4").hide();
+         $("#userExpTrack2").hide();
+         $("#rubyReactTrack3").hide();
+         $("#javaTrack4").hide();
+       }
+      }
+      else if(rolesInput === 4){
+        if(expertiseInput >= 1 && goalsInput === 2 && flexInput === 2) {
+          $("#cSharpTrack1").hide();
+          $("#userExpTrack2").hide();
+          $("#rubyReactTrack3").hide();
+          $("#javaTrack4").show());
+          $("otherOptionsTrack1").hide();
+          $("otherOptionsTrack2").hide();
+          $("otherOptionsTrack3").hide();
+          $("otherOptionsTrack4").hide();
+        }
+        else {
+          $("otherOptionsTrack1").hide();
+          $("otherOptionsTrack2").hide();
+          $("otherOptionsTrack3").hide();
+          $("otherOptionsTrack4").show();
+          $("#userExpTrack2").hide();
+          $("#rubyReactTrack3").hide();
+          $("#javaTrack4").hide();
+        }
+      }
+    }
+    else {
+      $("noRoleOptions").show();
+      $("otherOptionsTrack1").hide();
+      $("otherOptionsTrack2").hide();
+      $("otherOptionsTrack3").hide();
+      $("otherOptionsTrack4").hide();
+      $("#userExpTrack2").hide();
+      $("#rubyReactTrack3").hide();
+      $("#javaTrack4").hide();
+    }
+  }
 
-  // }
+  chooseTrack(rolesInput, expertiseInput, goalsInput, flexInput);
 
   event.preventDefault();
 });

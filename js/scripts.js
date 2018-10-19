@@ -10,13 +10,25 @@ $(document).ready(function() {
   console.log(goalsInput);
   var flexInput = parseInt($("select#addFlex").val());
   var sessionInput = parseInt($("select#addSess").val());
-  var locationInput = parseInt($("input:radio[name=customRadioInline1]:checked").val());
+  var locationInput = $("input:radio[name=customRadioInline1]:checked").val();
+  console.log(locationInput);
 
   //backend
 
+  funtion chooseLocation(){
+    if (locationInput === "Seattle")
+     $(".location").text(locationInput);
+    else {
+     $(".location").text(locationInput);
+    }
+  }
+
   function chooseTrack(){
-    if(rolesInput){
-      if(rolesInput === 1) {
+    if (rolesInput){
+      $("noRoleOptionsTrack").hide();
+      $(".name").text(nameInput);
+      chooseLocation(locationInput);
+      if (rolesInput === 1) {
         if (expertiseInput >= 2 && goalsInput === 3 && flexInput === 2) {
          $("#cSharpTrack1").show();
          $("#userExpTrack2").hide();
@@ -37,28 +49,29 @@ $(document).ready(function() {
          $("#javaTrack4").hide();
        }
       }
-      else if(rolesInput === 2)
-       if(expertiseInput >= 1 && goalsInput >= 2  && goalsInput < 4 && flexInput <= 2) {
-        $("#cSharpTrack1").hide();
-        $("#userExpTrack2").show();
-        $("#rubyReactTrack3").hide();
-        $("#javaTrack4").hide();
-        $("otherOptionsTrack1").hide();
-        $("otherOptionsTrack2").hide();
-        $("otherOptionsTrack3").hide();
-        $("otherOptionsTrack4").hide();
+      if (rolesInput === 2){
+        if (expertiseInput >= 1 && goalsInput >= 2  && goalsInput < 4 && flexInput <= 2) {
+         $("#cSharpTrack1").hide();
+         $("#userExpTrack2").show();
+         $("#rubyReactTrack3").hide();
+         $("#javaTrack4").hide();
+         $("otherOptionsTrack1").hide();
+         $("otherOptionsTrack2").hide();
+         $("otherOptionsTrack3").hide();
+         $("otherOptionsTrack4").hide();
+       }
+        else {
+         $("otherOptionsTrack1").hide();
+         $("otherOptionsTrack2").show();
+         $("otherOptionsTrack3").hide();
+         $("otherOptionsTrack4").hide();
+         $("#userExpTrack2").hide();
+         $("#rubyReactTrack3").hide();
+         $("#javaTrack4").hide();
+        }
       }
-      else {
-        $("otherOptionsTrack1").hide();
-        $("otherOptionsTrack2").show();
-        $("otherOptionsTrack3").hide();
-        $("otherOptionsTrack4").hide();
-        $("#userExpTrack2").hide();
-        $("#rubyReactTrack3").hide();
-        $("#javaTrack4").hide();
-      }
-      else if(rolesInput === 3) {
-        if(expertiseInput >= 3 && goalsInput >= 3 && flexInput === 2) {
+      else if (rolesInput === 3) {
+        if (expertiseInput >= 3 && goalsInput >= 3 && flexInput === 2) {
           $("#cSharpTrack1").hide();
           $("#userExpTrack2").hide();
           $("#rubyReactTrack3").show();
@@ -78,12 +91,12 @@ $(document).ready(function() {
          $("#javaTrack4").hide();
        }
       }
-      else if(rolesInput === 4){
-        if(expertiseInput >= 1 && goalsInput === 2 && flexInput === 2) {
+      else if (rolesInput === 4){
+        if (expertiseInput >= 1 && goalsInput === 2 && flexInput === 2) {
           $("#cSharpTrack1").hide();
           $("#userExpTrack2").hide();
           $("#rubyReactTrack3").hide();
-          $("#javaTrack4").show());
+          $("#javaTrack4").show();
           $("otherOptionsTrack1").hide();
           $("otherOptionsTrack2").hide();
           $("otherOptionsTrack3").hide();
@@ -101,7 +114,8 @@ $(document).ready(function() {
       }
     }
     else {
-      $("noRoleOptions").show();
+      $(".name").text(nameInput);
+      $("noRoleOptionsTrack").show();
       $("otherOptionsTrack1").hide();
       $("otherOptionsTrack2").hide();
       $("otherOptionsTrack3").hide();

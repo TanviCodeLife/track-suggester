@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     function chooseTrack(){
       console.log(validOptions1);
-      $(".name").text(nameInput);
+      $("p#name").text(nameInput);
       chooseLocation(locationInput);
       $(".modal").fadeIn();
       //Dev Ops
@@ -33,14 +33,40 @@ $(document).ready(function() {
         $("#userExpTrack2").hide();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").hide();
-        $("#otherOptionsTrack1").hide();
+        $("#otherOptionsTrack1-1").hide();
+        $("#otherOptionsTrack1-2").hide();
         $("#otherOptionsTrack2").hide();
         $("#otherOptionsTrack3").hide();
         $("#otherOptionsTrack4").hide();
         var validOptions1 = false;
       }
-      else if (rolesInput === 1 && !validOptions1) {
-        $("#otherOptionsTrack1").show();
+      else if (rolesInput === 1 && expertiseInput === 1 && goalsInput >= 2 && flexInput === 2) {
+        $("#otherOptionsTrack1-1").show();
+        $("#otherOptionsTrack1-2").hide();
+        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack2").hide();
+        $("#otherOptionsTrack3").hide();
+        $("#otherOptionsTrack4").hide();
+        $("#cSharpTrack1").hide();
+        $("#userExpTrack2").hide();
+        $("#rubyReactTrack3").hide();
+        $("#javaTrack4").hide();
+      }
+      else if (rolesInput === 1 && expertiseInput >= 2 && goalsInput == 1 && flexInput === 2) {
+        $("#otherOptionsTrack1-1").hide();
+        $("#otherOptionsTrack1-2").show();
+        $("#otherOptionsTrack2").hide();
+        $("#otherOptionsTrack3").hide();
+        $("#otherOptionsTrack4").hide();
+        $("#cSharpTrack1").hide();
+        $("#userExpTrack2").hide();
+        $("#rubyReactTrack3").hide();
+        $("#javaTrack4").hide();
+      }
+      else if (rolesInput === 1 && expertiseInput == 1 && goalsInput == 1 && flexInput === 2) {
+        $("#otherOptionsTrack1-1").show();
+        $("#otherOptionsTrack1-2").show();
+        $("#otherOptionsTrack1-3").show();
         $("#otherOptionsTrack2").hide();
         $("#otherOptionsTrack3").hide();
         $("#otherOptionsTrack4").hide();

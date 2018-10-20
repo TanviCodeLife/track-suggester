@@ -28,72 +28,100 @@ $(document).ready(function() {
       chooseLocation(locationInput);
       $(".modal").fadeIn();
       //Dev Ops
-      if (rolesInput === 1 && expertiseInput >= 2 && goalsInput >= 2 && flexInput === 2) {
+      if (rolesInput === 1 && expertiseInput >= 2 && goalsInput >= 2) {
         $("#cSharpTrack1").show();
-        $("#userExpTrack2").hide();
-        $("#rubyReactTrack3").hide();
-        $("#javaTrack4").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").hide();
+        $("#otherOptionsTrack1-3").show();
+        $("#userExpTrack2").hide();
+        $("#otherOptionsTrack2-1").hide();
+        $("#otherOptionsTrack2-2").hide();
+        $("#otherOptionsTrack2-3").hide();
+        $("#rubyReactTrack3").hide();
+        $("#javaTrack4").hide();
         $("#otherOptionsTrack2").hide();
         $("#otherOptionsTrack3").hide();
         $("#otherOptionsTrack4").hide();
         var validOptions1 = false;
       }
-      else if (rolesInput === 1 && expertiseInput === 1 && goalsInput >= 2 && flexInput === 2) {
+      else if (rolesInput === 1 && expertiseInput === 1 && goalsInput >= 2) {
+        $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").show();
         $("#otherOptionsTrack1-2").hide();
         $("#otherOptionsTrack1-3").show();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").hide();
-        $("#otherOptionsTrack4").hide();
-        $("#cSharpTrack1").hide();
         $("#userExpTrack2").hide();
+        $("#otherOptionsTrack2-1").hide();
+        $("#otherOptionsTrack2-2").hide();
+        $("#otherOptionsTrack2-3").hide();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").hide();
       }
-      else if (rolesInput === 1 && expertiseInput >= 2 && goalsInput == 1 && flexInput === 2) {
+      else if (rolesInput === 1 && expertiseInput >= 2 && goalsInput == 1) {
+        $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").show();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").hide();
-        $("#otherOptionsTrack4").hide();
-        $("#cSharpTrack1").hide();
+        $("#otherOptionsTrack1-3").show();
         $("#userExpTrack2").hide();
+        $("#otherOptionsTrack2-1").hide();
+        $("#otherOptionsTrack2-2").hide();
+        $("#otherOptionsTrack2-3").hide();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").hide();
       }
-      else if (rolesInput === 1 && expertiseInput == 1 && goalsInput == 1 && flexInput === 2) {
+      else if (rolesInput === 1 && expertiseInput == 1 && goalsInput == 1) {
+        $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").show();
         $("#otherOptionsTrack1-2").show();
         $("#otherOptionsTrack1-3").show();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").hide();
-        $("#otherOptionsTrack4").hide();
-        $("#cSharpTrack1").hide();
         $("#userExpTrack2").hide();
+        $("#otherOptionsTrack2-1").hide();
+        $("#otherOptionsTrack2-2").hide();
+        $("#otherOptionsTrack2-3").hide();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").hide();
       }
       //Front-end developer logic
-      else if(rolesInput === 2 && expertiseInput >= 1 && goalsInput >= 1  && flexInput >= 1) {
+      else if(rolesInput === 2 && expertiseInput >= 1 && goalsInput <= 2) {
         $("#cSharpTrack1").hide();
+        $("#otherOptionsTrack1-1").hide();
+        $("#otherOptionsTrack1-2").hide();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").show();
+        $("#otherOptionsTrack2-1").hide();
+        $("#otherOptionsTrack2-2").hide();
+        $("#otherOptionsTrack2-3").show();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").hide();
         $("#otherOptionsTrack1").hide();
         $("#otherOptionsTrack2").hide();
         $("#otherOptionsTrack3").hide();
         $("#otherOptionsTrack4").hide();
-        var validOptions2 = false;
       }
-      else if (rolesInput === 2 && !validOptions2){
+      else if(rolesInput === 2 && expertiseInput >= 1 && goalsInput === 3) {
+        $("#cSharpTrack1").hide();
+        $("#otherOptionsTrack1-1").hide();
+        $("#otherOptionsTrack1-2").hide();
+        $("#otherOptionsTrack1-3").hide();
+        $("#userExpTrack2").hide();
+        $("#otherOptionsTrack2-1").show();
+        $("#otherOptionsTrack2-2").hide();
+        $("#otherOptionsTrack2-3").show();
+        $("#rubyReactTrack3").hide();
+        $("#javaTrack4").hide();
         $("#otherOptionsTrack1").hide();
-        $("#otherOptionsTrack2").show();
+        $("#otherOptionsTrack2").hide();
         $("#otherOptionsTrack3").hide();
         $("#otherOptionsTrack4").hide();
+      }
+      else if (rolesInput === 2 && expertiseInput >= 1 && goalsInput === 4){
         $("#cSharpTrack1").hide();
+        $("#otherOptionsTrack1-1").hide();
+        $("#otherOptionsTrack1-2").hide();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").hide();
+        $("#otherOptionsTrack2-1").hide();
+        $("#otherOptionsTrack2-2").show();
+        $("#otherOptionsTrack2-3").show();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").hide();
       }
@@ -103,17 +131,8 @@ $(document).ready(function() {
         $("#userExpTrack2").hide();
         $("#rubyReactTrack3").show();
         $("#javaTrack4").hide();
-        $("#otherOptionsTrack1").hide();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").hide();
-        $("#otherOptionsTrack4").hide();
-        var validOptions3 = false;
       }
       else if (rolesInput === 3 && !validOptions3) {
-        $("#otherOptionsTrack1").hide();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").show();
-        $("#otherOptionsTrack4").hide();
         $("#cSharpTrack1").hide();
         $("#userExpTrack2").hide();
         $("#rubyReactTrack3").hide();
@@ -125,17 +144,8 @@ $(document).ready(function() {
         $("#userExpTrack2").hide();
         $("#rubyReactTrack3").hide();
         $("#javaTrack4").show();
-        $("#otherOptionsTrack1").hide();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").hide();
-        $("#otherOptionsTrack4").hide();
-        var validOptions4 = false;
       }
       else if (rolesInput === 4 && !validOptions4) {
-        $("#otherOptionsTrack1").hide();
-        $("#otherOptionsTrack2").hide();
-        $("#otherOptionsTrack3").hide();
-        $("#otherOptionsTrack4").show();
         $("#cSharpTrack1").hide();
         $("#userExpTrack2").hide();
         $("#rubyReactTrack3").hide();

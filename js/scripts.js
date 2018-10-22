@@ -23,8 +23,7 @@ $(document).ready(function() {
     }
 
     function chooseTrack(){
-      console.log(validOptions1);
-      $("p#name").text(nameInput);
+      $("#name").text(nameInput);
       chooseLocation(locationInput);
       $(".modal").fadeIn();
       //Dev Ops
@@ -214,7 +213,7 @@ $(document).ready(function() {
         $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").hide();
-        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").hide();
@@ -234,7 +233,7 @@ $(document).ready(function() {
         $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").hide();
-        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").hide();
@@ -254,7 +253,7 @@ $(document).ready(function() {
         $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").hide();
-        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").hide();
@@ -274,7 +273,7 @@ $(document).ready(function() {
         $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").hide();
-        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").hide();
@@ -283,12 +282,12 @@ $(document).ready(function() {
         $("#otherOptionsTrack3-1").show();
         $("#otherOptionsTrack3-2").hide();
         $("#otherOptionsTrack3-3").show();
-        $("#otherOptionsTrack3-4").show();
+        $("#otherOptionsTrack3-4").hide();
         $("#javaTrack4").hide();
         $("#otherOptionsTrack4-1").hide();
         $("#otherOptionsTrack4-2").hide();
         $("#otherOptionsTrack4-3").hide();
-        $("#otherOptionsTrack4-4").hide();
+        $("#otherOptionsTrack4-4").show();
       }
       //Android Developer
       else if (rolesInput === 4 && expertiseInput >= 1 && goalsInput === 4) {
@@ -364,7 +363,7 @@ $(document).ready(function() {
         $("#otherOptionsTrack3-1").hide();
         $("#otherOptionsTrack3-2").hide();
         $("#otherOptionsTrack3-3").hide();
-        $("#otherOptionsTrack3-4").show();
+        $("#otherOptionsTrack3-4").hide();
         $("#javaTrack4").hide();
         $("#otherOptionsTrack4-1").hide();
         $("#otherOptionsTrack4-2").hide();

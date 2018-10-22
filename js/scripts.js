@@ -72,11 +72,11 @@ $(document).ready(function() {
         $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").show();
-        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack1-3").hide();
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").hide();
-        $("#otherOptionsTrack2-3").hide();
+        $("#otherOptionsTrack2-3").show();
         $("#rubyReactTrack3").hide();
         $("#otherOptionsTrack3-1").hide();
         $("#otherOptionsTrack3-2").hide();
@@ -96,7 +96,7 @@ $(document).ready(function() {
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").hide();
-        $("#otherOptionsTrack2-3").hide();
+        $("#otherOptionsTrack2-3").show();
         $("#rubyReactTrack3").hide();
         $("#otherOptionsTrack3-1").hide();
         $("#otherOptionsTrack3-2").hide();
@@ -133,11 +133,11 @@ $(document).ready(function() {
         $("#cSharpTrack1").hide();
         $("#otherOptionsTrack1-1").hide();
         $("#otherOptionsTrack1-2").hide();
+        $("#otherOptionsTrack1-3").show();
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").show();
         $("#otherOptionsTrack2-2").hide();
-        $("#otherOptionsTrack2-3").show();
-        $("#otherOptionsTrack1-3").show();
+        $("#otherOptionsTrack2-3").hide();
         $("#rubyReactTrack3").hide();
         $("#otherOptionsTrack3-1").hide();
         $("#otherOptionsTrack3-2").hide();
@@ -157,7 +157,7 @@ $(document).ready(function() {
         $("#userExpTrack2").hide();
         $("#otherOptionsTrack2-1").hide();
         $("#otherOptionsTrack2-2").show();
-        $("#otherOptionsTrack2-3").show();
+        $("#otherOptionsTrack2-3").hide();
         $("#rubyReactTrack3").hide();
         $("#otherOptionsTrack3-1").hide();
         $("#otherOptionsTrack3-2").hide();
@@ -167,8 +167,7 @@ $(document).ready(function() {
         $("#otherOptionsTrack4-1").hide();
         $("#otherOptionsTrack4-2").hide();
         $("#otherOptionsTrack4-3").hide();
-        $("#otherOptionsTrack4-4").hide();
-        //Also show track 4 android schedule info
+        $("#otherOptionsTrack4-4").show();
       }
       //Full-Stack Developer
       else if (rolesInput === 3 && expertiseInput >= 2 && goalsInput <= 2) {

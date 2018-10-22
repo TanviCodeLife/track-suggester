@@ -11,142 +11,142 @@
     <meta charset="utf-8">
     <title>Track Suggestor</title>
   </head>
-  <body>
-    <div class="container-fluid">
-      <div class="jumbotron">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-2">Epicodus Track Suggestor</h1>
-            <h4 class="lead">Please answer these questions to get an informed suggestion!<h4>
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="display-2">Epicodus Track Suggestor</h1>
+          <h4 class="lead">Please answer these questions to get an informed suggestion!<h4>
           </div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <form id="detailsform">
-        <div class="form-group">
-          <label for="addName" class="textColor">Name</label>
-          <input id="addName" class="form-control" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="addRoles" class="textColor">Future Job Roles:</label>
-          <select class="form-control" id="addRoles">
-            <option value="1">DevOps Engineer</option>
-            <option value="2">Front-End Developer</option>
-            <option value="3">Full Stack Developer</option>
-            <option value="4">Android Developer</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="addExpertise" class="textColor">Current Coding Experience:</label>
-          <select class="form-control" id="addExpertise">
-            <option value="1">No previous coding experience</option>
-            <option value="2">Some basic knowledge</option>
-            <option value="3">Used coding day to day</option>
-            <option value="4">Expert</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="addGoals" class="textColor">Interests:</label>
-          <select class="form-control" id="addGoals">
-            <option value="1">Design and Presentation</option>
-            <option value="2">Interacting with User Infomation</option>
-            <option value="3">Business Software</option>
-            <option value="4">Build Mobile Apps</option>
-          </select>
-        </div>
-        <div class="form-group" id="selectOption4">
-          <label for="addFlex" class="textColor">Select Program Flexibility:</label>
-          <select class="form-control" id="addFlex">
-            <option value="1">Part-Time/Online program - 30 weeks</option>
-            <option value="2">Full-Time program - 20 weeks</option>
-          </select>
-        </div>
-        <div class="form-group" id="selectOption3">
-          <label for="addSess" class="textColor">Upcoming Sessions:</label>
-          <select class="form-control" id="addSess">
-            <option value="1">January 8th, 2019</option>
-            <option value="2">May 8th, 2019</option>
-          </select>
-        </div>
-        <p class="textColor">Location:</p>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="addLocation1" name="customRadioInline1" class="custom-control-input" value="Portland">
-          <label class="custom-control-label" for="addLocation1" >Portland</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="addLocation2" name="customRadioInline1" class="custom-control-input" value="Seattle">
-          <label class="custom-control-label" for="addLocation2" >Seattle</label>
-        </div>
-        <div id="buttonAlign">
-          <button type="submit" class="btn btn-success" >Submit</button>
-        </div>
-      </form>
-      <!-- The Modal -->
-      <div class="modal" id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Here is your suggestion:</h4>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-              <p>Hello <span id="name"></span>! </p>
-              <div id="cSharpTrack1">
-                <p>For your selected background and interests, our C#/React Track will prepare you with the right technologies to be a DevOps Engineer.</p>
+      <div class="container">
+        <form id="detailsform">
+          <div class="form-group">
+            <label for="addName" class="textColor">Name</label>
+            <input id="addName" class="form-control" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="addRoles" class="textColor">Future Job Roles:</label>
+            <select class="form-control" id="addRoles">
+              <option value="1">DevOps Engineer</option>
+              <option value="2">Front-End Developer</option>
+              <option value="3">Full Stack Developer</option>
+              <option value="4">Android Developer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="addExpertise" class="textColor">Current Coding Experience:</label>
+            <select class="form-control" id="addExpertise">
+              <option value="1">No previous coding experience</option>
+              <option value="2">Some basic knowledge</option>
+              <option value="3">Used coding day to day</option>
+              <option value="4">Expert</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="addGoals" class="textColor">Interests:</label>
+            <select class="form-control" id="addGoals">
+              <option value="1">Design and Presentation</option>
+              <option value="2">Interacting with User Infomation</option>
+              <option value="3">Business Software</option>
+              <option value="4">Build Mobile Apps</option>
+            </select>
+          </div>
+          <div class="form-group" id="selectOption4">
+            <label for="addFlex" class="textColor">Select Program Flexibility:</label>
+            <select class="form-control" id="addFlex">
+              <option value="1">Part-Time/Online program - 30 weeks</option>
+              <option value="2">Full-Time program - 20 weeks</option>
+            </select>
+          </div>
+          <div class="form-group" id="selectOption3">
+            <label for="addSess" class="textColor">Upcoming Sessions:</label>
+            <select class="form-control" id="addSess">
+              <option value="1">January 8th, 2019</option>
+              <option value="2">May 8th, 2019</option>
+            </select>
+          </div>
+          <p class="textColor">Location:</p>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="addLocation1" name="customRadioInline1" class="custom-control-input" value="Portland">
+            <label class="custom-control-label" for="addLocation1" >Portland</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="addLocation2" name="customRadioInline1" class="custom-control-input" value="Seattle">
+            <label class="custom-control-label" for="addLocation2" >Seattle</label>
+          </div>
+          <div id="buttonAlign">
+            <button type="submit" class="btn btn-success" >Submit</button>
+          </div>
+        </form>
+        <!-- The Modal -->
+        <div class="modal" id="myModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Here is your suggestion:</h4>
               </div>
-              <div id="userExpTrack2">
-                <p>For your selected background and interests, our User Experience Track will prepare you with the right technologies to be a Front-End Developer. Please checkout our <a href="#"><span class="location"></span></a> location.</p>
-              </div>
-              <div id="rubyReactTrack3">
-                <p>For your selected background and interests, our Ruby/React Track will prepare you with the right technologies to be a Full Stack Developer. Please checkout our <a href="#"><span class="location"></span></a> location.</p>
-              </div>
-              <div id="javaTrack4">
-                <p>For your selected background and interests, our Java/Android Track will prepare you with the right technologies to be a Android Developer. Please checkout our <a href="#"><span class="location"></span></a> location.</p>
-              </div>
-              <div id="otherOptionsTrack1-1">
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p>Hello <span id="name"></span>! </p>
+                <div id="cSharpTrack1">
+                  <p>For your selected background and interests, our C#/React Track will prepare you with the right technologies to be a DevOps Engineer.</p>
+                </div>
+                <div id="userExpTrack2">
+                  <p>For your selected background and interests, our User Experience Track will prepare you with the right technologies to be a Front-End Developer. Please checkout our <a href="#"><span class="location"></span></a> location.</p>
+                </div>
+                <div id="rubyReactTrack3">
+                  <p>For your selected background and interests, our Ruby/React Track will prepare you with the right technologies to be a Full Stack Developer. Please checkout our <a href="#"><span class="location"></span></a> location.</p>
+                </div>
+                <div id="javaTrack4">
+                  <p>For your selected background and interests, our Java/Android Track will prepare you with the right technologies to be a Android Developer. Please checkout our <a href="#"><span class="location"></span></a> location.</p>
+                </div>
+                <div id="otherOptionsTrack1-1">
                   <p>We would recommend exploring some <a href="#">online resources</a> or try Epicodus <a href="#">Intro Course</a> first, to qualify for our C#/React Track. This track will give you right tools to pursue DevOps roles.
-              </div>
-              <div id="otherOptionsTrack1-2">
-                  <p>DevOps roles do not focus on Design and Presentation. You might also want to explore User Experience Dev for this interest.</p>
-              </div>
-              <div id="otherOptionsTrack1-3">
+                </div>
+                <div id="otherOptionsTrack1-2">
+                    <p>DevOps roles do not focus on Design and Presentation. You might also want to explore User Experience Dev for this interest.</p>
+                </div>
+                <div id="otherOptionsTrack1-3">
                   <p>Due to the complexity of the C# track, we offer only full time options at our <a href="#"><span class="location"></span></a> location.</p>
-              </div>
-              <div id="otherOptionsTrack2-1">
-                <p>Front End roles do not focus on Business Development. You can explore C# track and its requirements for Biz dev interest.</p>
-              </div>
-              <div id="otherOptionsTrack2-2">
-                <p>Front End roles can only support Mobile App Development for their front end design. You can also explore Ruby/React track that covers the full-stack development.</p>
-              </div>
-              <div id="otherOptionsTrack2-3">
+                </div>
+                <div id="otherOptionsTrack2-1">
+                  <p>Front End roles do not focus on Business Development. You can explore C# track and its requirements for Biz dev interest.</p>
+                </div>
+                <div id="otherOptionsTrack2-2">
+                  <p>Front End roles can only support Mobile App Development for their front end design. You can also explore the Java track to explore your interest in Mobile App development.</p>
+                </div>
+                <div id="otherOptionsTrack2-3">
                   <p>For User Experience Track, we offer both online and full time options at our <a href="#"><span class="location"></span></a> location.</p>
-              </div>
-              <div id="otherOptionsTrack3-1">
+                </div>
+                <div id="otherOptionsTrack3-1">
                   <p>We would recommend exploring some <a href="#">online resources</a> or try Epicodus <a href="#">Intro Course</a> first, to qualify for our Ruby/React Track. This track will give you right tools to pursue Full Stack development opportunities.
-              </div>
-              <div id="otherOptionsTrack3-2">
-                   <p>Full Stack Development roles do not focus on Business Development. You can explore C# track and its requirements for Biz dev interest.</p>
+                </div>
+                <div id="otherOptionsTrack3-2">
+                  <p>Full Stack Development roles do not focus on Business Development. You can explore C# track and its requirements for Biz dev interest.</p>
                 </div>
                 <div id="otherOptionsTrack3-3">
-                     <p>Mobile App Development does not entirely help you get into Full Stack Dev roles. However, you can explore our Java Track and its requirements for your interest.</p>
-                  </div>
+                  <p>Mobile App Development does not entirely help you get into Full Stack Dev roles. However, you can explore our Java Track and its requirements for your interest.</p>
+                </div>
                 <div id="otherOptionsTrack3-4">
-                    <p>Due to the complexity of the Ruby/React track, we offer only full time options at our <a href="#"><span class="location"></span></a> location.</p>
+                  <p>Due to the complexity of the Ruby/React track, we offer only full time options at our <a href="#"><span class="location"></span></a> location.</p>
                 </div>
                 <div id="otherOptionsTrack4-1">
-                     <p>Android Developer roles do not entirely focus on Design and Presentation. You can explore User Experience track and its requirements for your interest.</p>
-                  </div>
-                  <div id="otherOptionsTrack4-2">
-                       <p>Android Developer roles do not entirely focus on Interacting with User Infomation. You can explore Ruby/React track and its requirements for your interest.</p>
-                    </div>
-                    <div id="otherOptionsTrack4-3">
-                         <p>Android Developer roles do not entirely focus on Business Software. You can explore C#/React track and its requirements for your interest.</p>
-                      </div>
-                  <div id="otherOptionsTrack4-4">
-                      <p>Due to the complexity of the Ruby/React track, we offer only full time options at our <a href="#"><span class="location"></span></a> location.</p>
-                  </div>
-                <!-- Modal footer -->
+                  <p>Android Developer roles do not entirely focus on Design and Presentation. You can explore User Experience track and its requirements for your interest.</p>
+                </div>
+                <div id="otherOptionsTrack4-2">
+                  <p>Android Developer roles do not entirely focus on Interacting with User Infomation. You can explore Ruby/React track and its requirements for your interest.</p>
+                </div>
+                <div id="otherOptionsTrack4-3">
+                  <p>Android Developer roles do not entirely focus on Business Software. You can explore C#/React track and its requirements for your interest.</p>
+                </div>
+                <div id="otherOptionsTrack4-4">
+                  <p>Due to the complexity of the Java track, we offer only full time options at our <a href="#"><span class="location"></span></a> location.</p>
+                </div>
+                    <!-- Modal footer -->
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" id="modalClose">Close</button>
                 </div>
